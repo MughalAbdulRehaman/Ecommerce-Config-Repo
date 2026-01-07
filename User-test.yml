@@ -22,7 +22,7 @@ logging:
   level:
     root: INFO
     com.OrderManagement: DEBUG
-  file: D:\E-Commerce Order Management System\Log\EKL-Log
+  file: D:\E-Commerce Order Management System\Log\EKL-Log.log
 
 
   pattern:

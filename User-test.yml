@@ -25,7 +25,7 @@ logging:
 
 
   pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %level - %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] - %logger{36} - %level - %msg%n"
 
 resilience4j:
   circuitbreaker:

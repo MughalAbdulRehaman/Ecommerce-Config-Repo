@@ -19,7 +19,9 @@ logging:
     com.OrderManagement: DEBUG
 
   pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] [%X{traceId}] [%X{spanId}] %logger{36} - %level - %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{traceId:-}] [%X{spanId:-}] %logger{36} - %level - %msg %ex%n"
+
+
 
 eureka:
   client:

@@ -13,6 +13,14 @@ spring:
       ddl-auto: update
     show-sql: true
 
+logging:
+  level:
+    root: INFO
+    com.OrderManagement: DEBUG
+
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] [%X{traceId}] [%X{spanId}] %logger{36} - %level - %msg%n"
+
 eureka:
   client:
     service-url:

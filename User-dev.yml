@@ -19,9 +19,9 @@ logging:
     com.OrderManagement: DEBUG
 
   pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{traceId:-}] [%X{spanId:-}] %logger{36} - %level - %msg %ex%n"
-
-
+    level: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{traceId:-}] [%X{spanId:-}] %-5level %logger{36} - %msg%n%ex"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{traceId:-}] [%X{spanId:-}] %-5level %logger{36} - %msg%n%ex"
+    console-color: always
 
 eureka:
   client:

@@ -9,5 +9,6 @@ spring:
 
       properties:
         spring.json.trusted.packages: "*"
+        spring.json.use.type.headers: true  
 
       auto-offset-reset: latest
